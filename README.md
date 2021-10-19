@@ -9,6 +9,10 @@ localhost:3000
 
 저장소 내려받기
 
+## `npm install`
+
+모듈(node_modules) 다운로드
+
 ## `npm start`
 
 서비스 실행
