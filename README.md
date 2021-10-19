@@ -1,9 +1,13 @@
 # 쇼핑몰 프로젝트
 
-Front-End : ReactJs
-Back-End  : NodeJs(Express)
-
+Front-End : ReactJs   
+Back-End  : NodeJs(Express)   
+   
 localhost:3000
+
+## `git clone https://github.com/ShoppingMallProject/ShoppingMall`
+
+저장소 내려받기
 
 ## `npm start`
 
