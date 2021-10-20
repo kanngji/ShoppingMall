@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { FaAlignJustify } from 'react-icons/fa';
 
 class App extends React.Component {
 
@@ -23,12 +24,28 @@ class App extends React.Component {
   render() {
     const {username} = this.state;
     return (
+      
         <div className="App">
-          <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-            {username ? `Hello ${username}` : 'Hello World'}
+          <header>
+          <div className="top-bar">
+            <a>로그인</a>
+            <a>회원가입</a>
+            <a>고객센터</a>
+
+          </div>
+          <div className="category">
+          <FaAlignJustify color="white" size="42"/>
+          <h4 style={{color:"white"}}>카테고리</h4>
+          </div>
+          
+         
+      
+
+
+
           </header>
         </div>
+      
     );
   };
   
