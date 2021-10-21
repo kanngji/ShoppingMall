@@ -33,9 +33,16 @@ class App extends React.Component {
             <a>고객센터</a>
 
           </div>
+          
           <div className="category">
           <FaAlignJustify color="white" size="42"/>
           <h4 style={{color:"white"}}>카테고리</h4>
+          
+          </div>
+          
+          
+          <div className="logo">
+            <img alt="logo" src="images/logo.png"></img>
           </div>
           
          

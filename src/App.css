@@ -19,8 +19,18 @@
   justify-content: center;
   
   
+  
 }
 .category h4{
   margin-left: 6px;
+}
+
+.logo {
+  width: 500px;
+  height: 100px;
+  
+  margin-left: 140px;
+  margin-top: -80px;
+  display: block;
 }
 
