@@ -24,3 +24,6 @@ localhost:3000
 ## `node ./server/server.js`
 
 서비스 nodeJs 부분만 실행
+
+Antoher git process seems to be running in this repository 오류해결방법
+https://mocadev.tistory.com/19
