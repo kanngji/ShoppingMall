@@ -50,6 +50,8 @@ class App extends React.Component {
               <SearchBar/>
             </div>
           </div>
+
+          
           
          
       
@@ -57,6 +59,27 @@ class App extends React.Component {
 
 
           </header>
+
+          <footer>
+            <div className="profiles">
+              <div className="user">
+                <img alt="moboo" src="images/profile2.PNG"></img>
+                <div className="intro">
+                <p>박준수</p>
+                <a href="https://github.com/junsu929">깃허브주소</a>
+                </div>
+              </div>
+              <div className="user">
+                <img alt="moboo" src="images/profile1.JPG"></img>
+                <div className="intro">
+                <p>강지훈</p>
+                <a href="https://github.com/kanngji">깃허브주소</a>
+                </div>
+              </div>
+
+              <button>To.개발자</button>
+            </div>
+          </footer>
         </div>
       
     );
