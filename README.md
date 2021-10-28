@@ -25,7 +25,7 @@ localhost:3000
 
 서비스 nodeJs 부분만 실행
 
-Another git process seems to be running in this repository 오류 해결
+Antoher git process seems to be running in this repository 오류해결방법
 https://mocadev.tistory.com/19
 
 ## `npm install react-bootstrap bootstrap@5.1.3`

@@ -15,10 +15,14 @@ class App extends React.Component {
 
   componentDidMount() {
 
-      // 테스트용 지워도 됩니다.
-      fetch('http://localhost:3001/api')
-          .then(res=>res.json())
-          .then(data=>this.setState({username:data.username}));
+
+    
+    // DB 테스트
+     fetch('http://localhost:3001/db_test')
+      .then(res=>res.json())
+      .then(data=>{
+        console.log(data[0]);
+      });
   }
 
   // 메인 페이지
