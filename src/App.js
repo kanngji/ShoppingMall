@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { FaAlignJustify } from 'react-icons/fa';
 import SearchBar from './components/SearchBar';
+import { Carousel } from 'react-bootstrap';
 
 class App extends React.Component {
 
@@ -15,10 +16,14 @@ class App extends React.Component {
 
   componentDidMount() {
 
-      // 테스트용 지워도 됩니다.
-      fetch('http://localhost:3001/api')
-          .then(res=>res.json())
-          .then(data=>this.setState({username:data.username}));
+
+    
+    // DB 테스트
+     fetch('http://localhost:3001/db_test')
+      .then(res=>res.json())
+      .then(data=>{
+        console.log(data[0]);
+      });
   }
 
   // 메인 페이지
@@ -50,15 +55,97 @@ class App extends React.Component {
               <SearchBar/>
             </div>
           </div>
+        </header>
+        {/* 슬라이드배너 */}
+        <Carousel>
+          <Carousel.Item interval={1000}>
+            <img
+              className="d-block w-100"
+              src="images/carousel1.PNG"
+              alt="First slide" height={300}
+            />
+          </Carousel.Item>
+          <Carousel.Item interval={300}>
+            <img
+              className="d-block w-100"
+              src="images/carousel2.PNG"
+              alt="Second slide" height={300}
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="images/carousel3.PNG"
+            alt="Third slide" height={300}
+          />
+          </Carousel.Item>
+          </Carousel>
 
-          
-          
-         
-      
+      {/* 상품배열 */}
+      {/* md:12가 끝  */}
+      {/* 2씩 할당 */}
+      <div className="container-man top5">
+        <div className="row">
+          <h2>남성부분 TOP 5</h2>
+          <div class="col-md-2">
+            <img src="images/apple.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/cellphone.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/laptop.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/water.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/shoes.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+        </div>
+      </div>
 
+      <div className="container-woman-top5">
+        <div className="row">
+          <h2>여성부분 TOP 5</h2>
+          <div class="col-md-2">
+            <img src="images/jam.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/cellphone.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/coffee.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/bread.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+          <div class="col-md-2">
+          <img src="images/water.jpg" width="100%" />
+            <h4>상품명</h4>
+            <p>상품설명 & 가격</p>
+          </div>
+        </div>
+      </div>
 
-
-          </header>
 
           <footer>
             <div className="profiles">
@@ -80,7 +167,7 @@ class App extends React.Component {
               <button>To.개발자</button>
             </div>
           </footer>
-        </div>
+      </div>
       
     );
   };
