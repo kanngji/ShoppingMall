@@ -4,6 +4,8 @@ import './App.css';
 import { FaAlignJustify } from 'react-icons/fa';
 import SearchBar from './components/SearchBar';
 import { Carousel } from 'react-bootstrap';
+//라우터기능
+import {Link,Route,Switch} from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -26,12 +28,14 @@ class App extends React.Component {
       });
   }
 
-  // 메인 페이지
+  
   render() {
     const {username} = this.state;
     return (
-      
+      // 메인 페이지
+        
         <div className="App">
+          <Route exact path="/">
           <header>
           <div className="top-bar">
             <a>로그인</a>
@@ -167,7 +171,15 @@ class App extends React.Component {
               <button>To.개발자</button>
             </div>
           </footer>
+          </Route>
+          {/* <Route exact path="/login" Component={Login}></Route> */}
+          <Route exact path="/login">
+            <div>로그인페이지 작성</div>
+          </Route>
       </div>
+      
+      
+     
       
     );
   };

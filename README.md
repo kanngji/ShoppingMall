@@ -27,3 +27,6 @@ localhost:3000
 
 Another git process seems to be running in this repository 오류 해결
 https://mocadev.tistory.com/19
+
+리액트 라우터 돔 설치 ( 페이지 나누기 라우트)
+## `yarn add react-router-dom`
