@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { FaAlignJustify } from 'react-icons/fa';
 import SearchBar from './components/SearchBar';
+import Login from './components/Login';
 import { Carousel } from 'react-bootstrap';
 //라우터기능
 import {Link,Route,Switch} from 'react-router-dom';
@@ -38,8 +39,8 @@ class App extends React.Component {
           <Route exact path="/">
           <header>
           <div className="top-bar">
-            <a>로그인</a>
-            <a>회원가입</a>
+            <a><Link to="/login">로그인</Link></a>
+            <a><Link to="/register">회원가입</Link></a>
             <a>고객센터</a>
 
           </div>
@@ -174,7 +175,7 @@ class App extends React.Component {
           </Route>
           {/* <Route exact path="/login" Component={Login}></Route> */}
           <Route exact path="/login">
-            <div>로그인페이지 작성</div>
+            <Login/>
           </Route>
       </div>
       
