@@ -71,6 +71,22 @@ a:link {
   justify-content: center;
   
 }
+.cart {
+  display: inline-block;
+  margin-right: 40px;
+}
+.cart p {
+  justify-content: center;
+}
+
+.upload {
+  display:inline-block;
+  justify-content: center;
+}
+
+.upload p{
+  justify-content: center;
+}
 
 
 .category{

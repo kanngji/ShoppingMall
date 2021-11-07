@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { FaAlignJustify,FaCartPlus,FaUserAlt,FaSearch } from 'react-icons/fa';
+import { FaAlignJustify,FaCartPlus,FaUserAlt,FaSearch,FaGift } from 'react-icons/fa';
+import MyPage from './components/MyPage';
+import Cart from './components/Cart';
+import Upload from './components/Upload';
 import SearchBar from './components/SearchBar';
 import Login from './components/Login';
 import Register from './components/Register';
@@ -64,13 +67,17 @@ class App extends React.Component {
             <div>
             <FaSearch size="25"/>
             </div>
-            <div className="mypage">
+            <div className="mypage" onClick={()=>{window.location.href="/mypage"}}>
               <FaUserAlt color="rgb(105, 156, 231)" size="45" />
               <p>내정보</p>
             </div>
-            <div className="cart">
+            <div className="cart" onClick={()=>{window.location.href="/cart"}}>
               <FaCartPlus color="rgb(105, 156, 231)" size="45"/>
               <p>장바구니</p>
+            </div>
+            <div className="upload" onClick={()=>{window.location.href="/upload"}}>
+              <FaGift color="rgb(105, 156, 231)" size="45"/>
+              <p>물건판매</p>
             </div>
           </div>
         </header>
@@ -194,6 +201,20 @@ class App extends React.Component {
           <Route exact path="/register">
             <Register/>
           </Route>
+
+          <Route exact path="/upload">
+            <Upload/>
+          </Route>
+
+          <Route exact path="/cart">
+            <Cart/>
+          </Route>
+
+          <Route exact path="/mypage">
+            <MyPage/>
+          </Route>
+
+
       </div>
       
       
