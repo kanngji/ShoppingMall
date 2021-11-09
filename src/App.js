@@ -11,6 +11,7 @@ import Register from './components/Register';
 import { Carousel } from 'react-bootstrap';
 //라우터기능
 import {Link,Route,Switch} from 'react-router-dom';
+import Toprogrammer from './components/ToProgrammer';
 
 class App extends React.Component {
 
@@ -189,7 +190,7 @@ class App extends React.Component {
                 </div>
               </div>
 
-              <button>To.개발자</button>
+              <button onClick={()=>{window.location.href="/toprogrammer"}}>To.개발자</button>
             </div>
           </footer>
           </Route>
@@ -212,6 +213,10 @@ class App extends React.Component {
 
           <Route exact path="/mypage">
             <MyPage/>
+          </Route>
+
+          <Route exact path="/toprogrammer">
+            <Toprogrammer/>
           </Route>
 
 
